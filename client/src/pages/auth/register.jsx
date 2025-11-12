@@ -75,11 +75,13 @@ const Register = () => {
     <div className='mx-auto lg:w-[60%] md:w-[50%] sm:w-[60%] w-[100%] max-w-md space-y-6 text-center flex flex-col items-center justify-center font-poppins overflow-y-scroll scrollbar-hide mb-10'>
       
       <div className='flex flex-col items-center justify-center mt-10'>
-        <img src={logo} alt="Root-Ed" className='lg:[60%] md:[50%] sm:[40%] w-[30%]'/>
+        <div className="flex justify-center items-center lg:w-[10rem] md:w-[10rem] sm:w-[10rem] w-[10rem]">
+            <h2 className='lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1.4rem] text-[1.4rem] font-semibold text-primary_nav text-center'>Million Minds</h2>
+          </div>
       </div>
       
       <div className='flex flex-col items-center justify-center gap-2'>
-        <h2 className='text-sm text-black mt-3'>Join over  <span className='text-[#40B47C] font-bold ml-1 mr-1'>2M</span> global social users</h2>
+        <h2 className='text-sm text-black mt-3'>Join over  <span className='text-primary font-bold ml-1 mr-1'>2M</span> global social users</h2>
         <img src={user_img} alt="Motren-connect" className='w-[4rem]'/>
       </div>
 
@@ -87,7 +89,7 @@ const Register = () => {
         <h2 className='font-medium lg:text-[1.2rem] md:text-[1rem] sm:text-[1rem] text-[1rem] text-[#626262]'>SignUp Account</h2>
         <div className='flex items-center justify-center gap-2'>
           <p className='font-medium lg:text-[1rem] md:text-[.8rem] sm:text-[.8rem] text-[.8rem]'>Already have an aacount ?</p>
-          <p className='font-medium lg:text-[1rem] md:text-[.8rem] sm:text-[.8rem] text-[.8rem] text-[#40B47C] cursor-pointer' onClick={()=>navigate("/auth/login")}>Link to your account</p>
+          <p className='font-medium lg:text-[1rem] md:text-[.8rem] sm:text-[.8rem] text-[.8rem] text-primary cursor-pointer' onClick={()=>navigate("/auth/login")}>Link to your account</p>
         </div>
       </div>
       <div className='bg-white/100 rounded-2xl p-6 w-[90%] max-w-md flex flex-col items-center justify-center border border-[#ccc]'>
@@ -126,14 +128,14 @@ const Register = () => {
                 </div>
               )}
               <div className='lg:w-[100%] md:w-[95%] sm:[100%] w-[130%] mt-3 flex flex-col items-center justify-center gap-2'>
-                <button className='bg-primary_button lg:p-[.6rem] ms:p-[.5rem] sm:p-[.5rem] p-[.5rem] rounded-[.5rem] lg:w-[80%] md:w-[85%] sm:[80%] w-[70%] lg:text-[1rem] md:text-[1rem] sm:text-[1rem] text-[1rem] text-white' onClick={(e)=>{handleSubmit(e)}}>Sign Up</button>
+                <button className='bg-primary lg:p-[.6rem] ms:p-[.5rem] sm:p-[.5rem] p-[.5rem] rounded-[.5rem] lg:w-[80%] md:w-[85%] sm:[80%] w-[70%] lg:text-[1rem] md:text-[1rem] sm:text-[1rem] text-[1rem] text-white' onClick={(e)=>{handleSubmit(e)}}>Sign Up</button>
                 
               </div>
               {/* OAuth Google Authentication */}
                 <div className='lg:w-[80%] md:w-[85%] sm:[80%] w-[90%]'>
                   <GoogleLoginButton/>
                 </div>
-              <h2 className='text-gray-400 text-sm '>Already have an account? <Link className='text-primary_button' to="/auth/login">Sign In</Link>. connect now!</h2>
+              <h2 className='text-gray-400 text-sm '>Already have an account? <Link className='text-primary' to="/auth/login">Sign In</Link>. connect now!</h2>
           </div>
           </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import bg from "../../assets/bg.png"
-import user_img from "../../assets/user_img.png"
+import user_img from "../../assets/User_img.png"
 import "../../App.css";
 import { TiTick } from "react-icons/ti";
 import { ArrowRight, Users, Check } from 'lucide-react';
