@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/posts";
+const API_URL = "https://million-minds-research.onrender.com/api/posts";
 
 const initialState = {
   posts: [],

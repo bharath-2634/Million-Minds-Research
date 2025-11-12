@@ -18,7 +18,7 @@ const ContactForm = () => {
     setFeedback(null)
 
     try {
-      const res = await fetch('http://localhost:5000/api/mail/send-faq-mail', {
+      const res = await fetch('https://million-minds-research.onrender.com/api/mail/send-faq-mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
