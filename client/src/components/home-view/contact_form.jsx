@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import logo from "../../assets/Root-Ed-logo.png";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
